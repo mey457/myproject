@@ -31,7 +31,7 @@
                     <figure>
                         <a href="news-detail.php">
                             <div class="thumbnail">
-                                <img src="https://via.placeholder.com/730x415" alt="">
+                                <img src="https://placehold.co/730x415" alt="">
                                 <div class="title">
                                     អ្នកជំនាញថា កម្ពុជាមិនទាន់ធ្លាក់ចូលទៅក្នុងវិបត្តិបំណុលនោះទេ ខណៈកម្ពុជាអាចនៅអាចគ្រប់គ្រងបានល្អ​
                                 </div>
@@ -44,7 +44,7 @@
                         <figure>
                             <a href="">
                                 <div class="thumbnail">
-                                    <img src="https://via.placeholder.com/350x200" alt="">
+                                    <img src="https://placehold.co/350x200" alt="">
                                 <div class="title">
                                     អ្នកជំនាញថា កម្ពុជាមិនទាន់ធ្លាក់ចូលទៅក្នុងវិបត្តិបំណុលនោះទេ ខណៈកម្ពុជាអាចនៅអាចគ្រប់គ្រងបានល្អ​
                                 </div>
@@ -56,7 +56,7 @@
                         <figure>
                             <a href="">
                                 <div class="thumbnail">
-                                    <img src="https://via.placeholder.com/350x200" alt="">
+                                    <img src="https://placehold.co/350x200" alt="">
                                 <div class="title">
                                     អ្នកជំនាញថា កម្ពុជាមិនទាន់ធ្លាក់ចូលទៅក្នុងវិបត្តិបំណុលនោះទេ ខណៈកម្ពុជាអាចនៅអាចគ្រប់គ្រងបានល្អ​
                                 </div>
@@ -90,7 +90,7 @@
                     <figure>
                         <a href="">
                             <div class="thumbnail">
-                                <img src="https://via.placeholder.com/350x200" alt="">
+                                <img src="https://placehold.co/350x200" alt="">
                             <div class="title">
                                 អ្នកជំនាញថា កម្ពុជាមិនទាន់ធ្លាក់ចូលទៅក្នុងវិបត្តិបំណុលនោះទេ ខណៈកម្ពុជាអាចនៅអាចគ្រប់គ្រងបានល្អ​
                             </div>
@@ -102,7 +102,7 @@
                     <figure>
                         <a href="">
                             <div class="thumbnail">
-                                <img src="https://via.placeholder.com/350x200" alt="">
+                                <img src="https://placehold.co/350x200" alt="">
                             <div class="title">
                                 អ្នកជំនាញថា កម្ពុជាមិនទាន់ធ្លាក់ចូលទៅក្នុងវិបត្តិបំណុលនោះទេ ខណៈកម្ពុជាអាចនៅអាចគ្រប់គ្រងបានល្អ​
                             </div>
@@ -114,7 +114,7 @@
                     <figure>
                         <a href="">
                             <div class="thumbnail">
-                                <img src="https://via.placeholder.com/350x200" alt="">
+                                <img src="https://placehold.co/350x200" alt="">
                             <div class="title">
                                 អ្នកជំនាញថា កម្ពុជាមិនទាន់ធ្លាក់ចូលទៅក្នុងវិបត្តិបំណុលនោះទេ ខណៈកម្ពុជាអាចនៅអាចគ្រប់គ្រងបានល្អ​
                             </div>
@@ -147,7 +147,7 @@
                     <figure>
                         <a href="">
                             <div class="thumbnail">
-                                <img src="https://via.placeholder.com/350x200" alt="">
+                                <img src="https://placehold.co/350x200" alt="">
                             <div class="title">
                                 អ្នកជំនាញថា កម្ពុជាមិនទាន់ធ្លាក់ចូលទៅក្នុងវិបត្តិបំណុលនោះទេ ខណៈកម្ពុជាអាចនៅអាចគ្រប់គ្រងបានល្អ​
                             </div>
@@ -159,7 +159,7 @@
                     <figure>
                         <a href="">
                             <div class="thumbnail">
-                                <img src="https://via.placeholder.com/350x200" alt="">
+                                <img src="https://placehold.co/350x200" alt="">
                             <div class="title">
                                 អ្នកជំនាញថា កម្ពុជាមិនទាន់ធ្លាក់ចូលទៅក្នុងវិបត្តិបំណុលនោះទេ ខណៈកម្ពុជាអាចនៅអាចគ្រប់គ្រងបានល្អ​
                             </div>
@@ -171,7 +171,7 @@
                     <figure>
                         <a href="">
                             <div class="thumbnail">
-                                <img src="https://via.placeholder.com/350x200" alt="">
+                                <img src="https://placehold.co/350x200" alt="">
                             <div class="title">
                                 អ្នកជំនាញថា កម្ពុជាមិនទាន់ធ្លាក់ចូលទៅក្នុងវិបត្តិបំណុលនោះទេ ខណៈកម្ពុជាអាចនៅអាចគ្រប់គ្រងបានល្អ​
                             </div>
@@ -203,7 +203,7 @@
                     <figure>
                         <a href="">
                             <div class="thumbnail">
-                                <img src="https://via.placeholder.com/350x200" alt="">
+                                <img src="https://placehold.co/350x200" alt="">
                             <div class="title">
                                 អ្នកជំនាញថា កម្ពុជាមិនទាន់ធ្លាក់ចូលទៅក្នុងវិបត្តិបំណុលនោះទេ ខណៈកម្ពុជាអាចនៅអាចគ្រប់គ្រងបានល្អ​
                             </div>
@@ -215,7 +215,7 @@
                     <figure>
                         <a href="">
                             <div class="thumbnail">
-                                <img src="https://via.placeholder.com/350x200" alt="">
+                                <img src="https://placehold.co/350x200" alt="">
                             <div class="title">
                                 អ្នកជំនាញថា កម្ពុជាមិនទាន់ធ្លាក់ចូលទៅក្នុងវិបត្តិបំណុលនោះទេ ខណៈកម្ពុជាអាចនៅអាចគ្រប់គ្រងបានល្អ​
                             </div>
@@ -227,7 +227,7 @@
                     <figure>
                         <a href="">
                             <div class="thumbnail">
-                                <img src="https://via.placeholder.com/350x200" alt="">
+                                <img src="https://placehold.co/350x200" alt="">
                             <div class="title">
                                 អ្នកជំនាញថា កម្ពុជាមិនទាន់ធ្លាក់ចូលទៅក្នុងវិបត្តិបំណុលនោះទេ ខណៈកម្ពុជាអាចនៅអាចគ្រប់គ្រងបានល្អ​
                             </div>
