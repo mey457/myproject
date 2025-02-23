@@ -1,5 +1,12 @@
 <?php 
-    include('sidebar.php');
+    // include('sidebar.php');
+    session_start();
+    if($_SESSION['user']){
+        include('sidebar.php');
+    }else{
+        
+        echo "<script>window.location.href='login.php'</script>";
+    }
 ?>
                 <div class="col-10">
                     <div class="content-right">

@@ -2,7 +2,8 @@
         <div class="container">
             <div class="logo">
                 <a href="">
-                    <img src="https://dummyimage.com/120" alt="">
+                    <!-- <img src="https://dummyimage.com/120" alt=""> -->
+                     <?php get_logo(); ?>
                 </a>
             </div>
             <div class="about">
@@ -12,7 +13,8 @@
             </div>
             <div class="connect">
                 <ul>
-                    <li>
+                    <?php get_logo_smail(); ?>
+                    <!-- <li>
                         <a href=""><img src="https://dummyimage.com/40/27306D" alt=""></a>
                     </li>
                     <li>
@@ -20,7 +22,7 @@
                     </li>
                     <li>
                         <a href=""><img src="https://dummyimage.com/40/27306D" alt=""></a>
-                    </li>
+                    </li> -->
                 </ul>
             </div>
         </div>

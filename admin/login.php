@@ -25,7 +25,6 @@
 </html>
 <?php 
 $conn = new mysqli('localhost', 'root', '', 'db_project');
-
 if ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['btn_login'])) {
     $name_email = trim($_POST['name_email']);
     $password = $_POST['password'];
@@ -35,26 +34,26 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['btn_login'])) {
     $smt->bind_param("ss", $name_email, $name_email);
     $smt->execute();
     $smt->store_result();
-
     $script = "<script>";
-
     // Check if a matching user was found
-    if ($smt->num_rows > 0) {
+    if ($smt->num_rows > 0){
         // Bind results
         $smt->bind_result($hashedPassword, $email, $role);
         $smt->fetch();
-
         // Verify password
         if (password_verify($password, $hashedPassword)) {
             session_start();
-            $_SESSION['user'] = $email;  // Store the email (or user identifier)
-            $_SESSION['role'] = $role;  // Store the role
-            
+            $_SESSION['user'] = $name_email;  // Store the email (or user identifier)
+            $_SESSION['role'] = $role;  // Store the role           
             // Redirect based on role
             if ($role == 'admin') {
-                header("location:/Cms_Project/admin/index.php");
+                
+           echo "<script>window.location.href='/Cms_Project/admin/index.php'</script>";
+                // header("location:/Cms_Project/admin/index.php");
             } else {
-                header("location:/Cms_Project/article/index.php");
+                
+        echo "<script>window.location.href='/Cms_Project/article/index.php'</script>";
+                // header("location:/Cms_Project/article/index.php");
             }
         } else {
             // Invalid password
@@ -72,13 +71,10 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['btn_login'])) {
             icon: "error"
         });';
     }
-
     $script .= "</script>";
     echo $script;
-
     // Close the prepared statement
     $smt->close();
 }
-
 $conn->close();
 ?>

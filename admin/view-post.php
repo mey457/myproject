@@ -1,5 +1,36 @@
 <?php 
     include('sidebar.php');
+    function getNew(){
+        $conn=new mysqli('localhost','root','','db_project');
+        $sql="SELECT *,`user_name` FROM `tbl__news` INNER JOIN `tbl_user` WHERE `userID`=`user_id`";
+        $result=$conn->query($sql);
+        while($row=$result->fetch_assoc()){
+            echo'
+                <tr>
+                                            
+                                            <td>'.$row['title'].'</td>
+                                            <td>'.$row['post_type'].'</td>
+                                            <td>'.$row['category'].'</td>
+                                            <td><img width="60px" src="./assets/image/'.$row['thumbnail'].'"></td>
+                                            <td>'.$row['create_at'].'</td>
+                                            <td>'.$row['update_at'].'</td>
+                                            <td>'.$row['user_name'].'</td>
+                                            <td>
+                                                <a href="editNew.php?id='.$row['id'].'" class="btn btn-primary">Edit</a>
+                                                <button type="button" remove-id="'.$row['id'].'" class="btn btn-danger btn-remove" data-bs-toggle="modal" data-bs-target="#exampleModal">Delete</button>
+                                            </td>
+                                        </tr>
+            ';
+    
+    }
+}
+if(isset($_POST['btndelet'])){
+    $id = $_POST['remove_id'];
+    $conn=new mysqli('localhost','root','','db_project');
+    $sql="DELETE FROM `tbl__news` WHERE `id`=$id";
+    $conn->query($sql);
+    echo "<script>window.location.href='view-post.php'</script>";
+}
 ?>
                 <div class="col-10">
                     <div class="content-right">
@@ -21,47 +52,14 @@
                                             <th>Categories</th>
                                             <th>Thumbnail</th>
                                             <th>Publish Date</th>
+                                            <th>Update_Date</th>
+                                            <th>Admin</th>
                                             <th>Actions</th>
                                         </tr>
-                                        <tr>
-                                            <td>Why do we use it?</td>
-                                            <td>Sport</td>
-                                            <td>National</td>
-                                            <td><img src="https://via.placeholder.com/80"/></td>
-                                            <td>27/June/2022</td>
-                                            <td width="150px">
-                                                <a href=""class="btn btn-primary">Update</a>
-                                                <button type="button" remove-id="1" class="btn btn-danger btn-remove" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                                                    Remove
-                                                </button>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>Why do we use it?</td>
-                                            <td>Sport</td>
-                                            <td>National</td>
-                                            <td><img src="https://via.placeholder.com/80"/></td>
-                                            <td>27/June/2022</td>
-                                            <td width="150px">
-                                                <a href=""class="btn btn-primary">Update</a>
-                                                <button type="button" remove-id="2" class="btn btn-danger btn-remove" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                                                    Remove
-                                                </button>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>Why do we use it?</td>
-                                            <td>Sport</td>
-                                            <td>National</td>
-                                            <td><img src="https://via.placeholder.com/80"/></td>
-                                            <td>27/June/2022</td>
-                                            <td width="150px">
-                                                <a href=""class="btn btn-primary">Update</a>
-                                                <button type="button" remove-id="3" class="btn btn-danger btn-remove" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                                                    Remove
-                                                </button>
-                                            </td>
-                                        </tr>
+                                        <?php 
+                                        
+                                         getNew();
+                                         ?>
                                     </table>
                                     <ul class="pagination">
                                         <li>
@@ -81,8 +79,8 @@
                                                 </div>
                                                 <div class="modal-footer">
                                                     <form action="" method="post">
-                                                        <input type="hidden" class="value_remove" name="remove_id">
-                                                        <button type="submit" class="btn btn-danger">Yes</button>
+                                                        <input type="text" class="value_remove" name="remove_id">
+                                                        <button type="submit" name="btndelet" class="btn btn-danger">Yes</button>
                                                         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">No</button>  
                                                     </form>
                                                 </div>

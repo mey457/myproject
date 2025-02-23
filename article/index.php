@@ -3,6 +3,7 @@
     <section class="trending">
         <div class="container">
             <div class="row">
+            <!-- <img src="../admin/./assets/image/" alt=""> -->
                 <div class="col-12">
                     <div class="content-trending">
                         <div class="content-left">
@@ -11,10 +12,11 @@
                         <div class="content-right">
                             <marquee behavior="" direction="left">
                                 <div class="text-news">
+                                    <?php get_title(); ?>
+                                    <!-- <i class="fas fa-angle-double-right"></i>
+                                    <a href=""></a> &ensp;
                                     <i class="fas fa-angle-double-right"></i>
-                                    <a href="">ពិធីសម្ពោធដាក់ឱ្យប្រើប្រាស់នូវកំណាត់ផ្លូវជាតិលេខ២៦ ប្រវែងជិត ៦៤គីឡូម៉ែត្រ </a> &ensp;
-                                    <i class="fas fa-angle-double-right"></i>
-                                    <a href="">ពិធីសម្ពោធដាក់ឱ្យប្រើប្រាស់នូវកំណាត់ផ្លូវជាតិលេខ២៦ ប្រវែងជិត ៦៤គីឡូម៉ែត្រ </a>
+                                    <a href="">ពិធីសម្ពោធដាក់ឱ្យប្រើប្រាស់នូវកំណាត់ផ្លូវជាតិលេខ២៦ ប្រវែងជិត ៦៤គីឡូម៉ែត្រ </a> -->
                                 </div>
                             </marquee>
                         </div>
@@ -27,43 +29,20 @@
     <section class="latest-news">
         <div class="container">
             <div class="row">
-                <div class="col-8 content-left">
-                    <figure>
-                        <a href="news-detail.php">
-                            <div class="thumbnail">
-                                <img src="https://placehold.co/730x415" alt="">
-                                <div class="title">
-                                    អ្នកជំនាញថា កម្ពុជាមិនទាន់ធ្លាក់ចូលទៅក្នុងវិបត្តិបំណុលនោះទេ ខណៈកម្ពុជាអាចនៅអាចគ្រប់គ្រងបានល្អ​
-                                </div>
-                            </div>
-                        </a>
-                    </figure>
-                </div>
+                  
+                    <?php 
+                              
+                    get_main_news(); 
+                    ?>
                 <div class="col-4 content-right">
+                   
+                        <?php 
+                        get_sub_news();
+                        ?>
+                    <!-- </div>
                     <div class="col-12">
-                        <figure>
-                            <a href="">
-                                <div class="thumbnail">
-                                    <img src="https://placehold.co/350x200" alt="">
-                                <div class="title">
-                                    អ្នកជំនាញថា កម្ពុជាមិនទាន់ធ្លាក់ចូលទៅក្នុងវិបត្តិបំណុលនោះទេ ខណៈកម្ពុជាអាចនៅអាចគ្រប់គ្រងបានល្អ​
-                                </div>
-                                </div>
-                            </a>
-                        </figure>
-                    </div>
-                    <div class="col-12">
-                        <figure>
-                            <a href="">
-                                <div class="thumbnail">
-                                    <img src="https://placehold.co/350x200" alt="">
-                                <div class="title">
-                                    អ្នកជំនាញថា កម្ពុជាមិនទាន់ធ្លាក់ចូលទៅក្នុងវិបត្តិបំណុលនោះទេ ខណៈកម្ពុជាអាចនៅអាចគ្រប់គ្រងបានល្អ​
-                                </div>
-                                </div>
-                            </a>
-                        </figure>
-                    </div>
+                   
+                    </div> -->
                 </div>
             </div>
         </div>
@@ -86,42 +65,11 @@
     <section class="news">
         <div class="container">
             <div class="row">
-                <div class="col-4">
-                    <figure>
-                        <a href="">
-                            <div class="thumbnail">
-                                <img src="https://placehold.co/350x200" alt="">
-                            <div class="title">
-                                អ្នកជំនាញថា កម្ពុជាមិនទាន់ធ្លាក់ចូលទៅក្នុងវិបត្តិបំណុលនោះទេ ខណៈកម្ពុជាអាចនៅអាចគ្រប់គ្រងបានល្អ​
-                            </div>
-                            </div>
-                        </a>
-                    </figure>
-                </div>
-                <div class="col-4">
-                    <figure>
-                        <a href="">
-                            <div class="thumbnail">
-                                <img src="https://placehold.co/350x200" alt="">
-                            <div class="title">
-                                អ្នកជំនាញថា កម្ពុជាមិនទាន់ធ្លាក់ចូលទៅក្នុងវិបត្តិបំណុលនោះទេ ខណៈកម្ពុជាអាចនៅអាចគ្រប់គ្រងបានល្អ​
-                            </div>
-                            </div>
-                        </a>
-                    </figure>
-                </div>
-                <div class="col-4">
-                    <figure>
-                        <a href="">
-                            <div class="thumbnail">
-                                <img src="https://placehold.co/350x200" alt="">
-                            <div class="title">
-                                អ្នកជំនាញថា កម្ពុជាមិនទាន់ធ្លាក់ចូលទៅក្នុងវិបត្តិបំណុលនោះទេ ខណៈកម្ពុជាអាចនៅអាចគ្រប់គ្រងបានល្អ​
-                            </div>
-                            </div>
-                        </a>
-                    </figure>
-                </div>
+                <?php 
+                               
+                getData_news("Sport"); 
+            ?>
+          
             </div>
         </div>
     </section>
@@ -143,42 +91,10 @@
     <section class="news">
         <div class="container">
             <div class="row">
-                <div class="col-4">
-                    <figure>
-                        <a href="">
-                            <div class="thumbnail">
-                                <img src="https://placehold.co/350x200" alt="">
-                            <div class="title">
-                                អ្នកជំនាញថា កម្ពុជាមិនទាន់ធ្លាក់ចូលទៅក្នុងវិបត្តិបំណុលនោះទេ ខណៈកម្ពុជាអាចនៅអាចគ្រប់គ្រងបានល្អ​
-                            </div>
-                            </div>
-                        </a>
-                    </figure>
-                </div>
-                <div class="col-4">
-                    <figure>
-                        <a href="">
-                            <div class="thumbnail">
-                                <img src="https://placehold.co/350x200" alt="">
-                            <div class="title">
-                                អ្នកជំនាញថា កម្ពុជាមិនទាន់ធ្លាក់ចូលទៅក្នុងវិបត្តិបំណុលនោះទេ ខណៈកម្ពុជាអាចនៅអាចគ្រប់គ្រងបានល្អ​
-                            </div>
-                            </div>
-                        </a>
-                    </figure>
-                </div>
-                <div class="col-4">
-                    <figure>
-                        <a href="">
-                            <div class="thumbnail">
-                                <img src="https://placehold.co/350x200" alt="">
-                            <div class="title">
-                                អ្នកជំនាញថា កម្ពុជាមិនទាន់ធ្លាក់ចូលទៅក្នុងវិបត្តិបំណុលនោះទេ ខណៈកម្ពុជាអាចនៅអាចគ្រប់គ្រងបានល្អ​
-                            </div>
-                            </div>
-                        </a>
-                    </figure>
-                </div>
+                <?php 
+                  getData_news("Social");
+                ?>
+              
             </div>
         </div>
     </section>
@@ -199,42 +115,9 @@
     <section class="news">
         <div class="container">
             <div class="row">
-                <div class="col-4">
-                    <figure>
-                        <a href="">
-                            <div class="thumbnail">
-                                <img src="https://placehold.co/350x200" alt="">
-                            <div class="title">
-                                អ្នកជំនាញថា កម្ពុជាមិនទាន់ធ្លាក់ចូលទៅក្នុងវិបត្តិបំណុលនោះទេ ខណៈកម្ពុជាអាចនៅអាចគ្រប់គ្រងបានល្អ​
-                            </div>
-                            </div>
-                        </a>
-                    </figure>
-                </div>
-                <div class="col-4">
-                    <figure>
-                        <a href="">
-                            <div class="thumbnail">
-                                <img src="https://placehold.co/350x200" alt="">
-                            <div class="title">
-                                អ្នកជំនាញថា កម្ពុជាមិនទាន់ធ្លាក់ចូលទៅក្នុងវិបត្តិបំណុលនោះទេ ខណៈកម្ពុជាអាចនៅអាចគ្រប់គ្រងបានល្អ​
-                            </div>
-                            </div>
-                        </a>
-                    </figure>
-                </div>
-                <div class="col-4">
-                    <figure>
-                        <a href="">
-                            <div class="thumbnail">
-                                <img src="https://placehold.co/350x200" alt="">
-                            <div class="title">
-                                អ្នកជំនាញថា កម្ពុជាមិនទាន់ធ្លាក់ចូលទៅក្នុងវិបត្តិបំណុលនោះទេ ខណៈកម្ពុជាអាចនៅអាចគ្រប់គ្រងបានល្អ​
-                            </div>
-                            </div>
-                        </a>
-                    </figure>
-                </div>
+                <?php 
+                  getData_news("Entertainment");
+                ?> 
             </div>
         </div>
     </section>

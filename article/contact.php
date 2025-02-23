@@ -51,23 +51,23 @@
                                 <div class="row">
                                     <div class="col-6">
                                         <div class="label">Username</div>
-                                        <input type="text" class="box" placeholder="Username" required>
+                                        <input type="text" class="box" name="name" placeholder="Username" required>
                                     </div>
                                     <div class="col-6">
                                         <div class="label">Email</div>
-                                        <input type="email" class="box" placeholder="Email" required>
+                                        <input type="email" class="box" name="email" placeholder="Email" required>
                                     </div>
                                     <div class="col-6">
                                         <div class="label">Telephone</div>
-                                        <input type="tel" class="box" placeholder="Telephone" required minlength="9" maxlength="10">
+                                        <input type="tel" name="telephone" class="box" placeholder="Telephone" required minlength="9" maxlength="10">
                                     </div>
                                     <div class="col-6">
                                         <div class="label">Address</div>
-                                        <input type="text" class="box" placeholder="Address" required>
+                                        <input type="text" name="address" class="box" placeholder="Address" required>
                                     </div>
                                     <div class="col-12">
                                         <div class="label">Message</div>
-                                        <textarea cols="30" rows="10" placeholder="Message Here" required></textarea>
+                                        <textarea cols="30" name="message" rows="10" placeholder="Message Here" required></textarea>
                                     </div>
                                     <div class="col-12">
                                         <div class="wrap-btn">
@@ -83,3 +83,29 @@
         </section>
     </div>
 <?php include('footer.php'); ?>
+<?php 
+$conn = new mysqli('localhost', 'root', '', 'db_project');
+if(isset($_POST['btn_message'])){
+    $username=$_POST['name'];
+    $email=$_POST['email'];
+    $telephone=$_POST['telephone'];
+    $address=$_POST['address'];
+    $message=$_POST['message'];
+    global $conn;
+    $sql="INSERT INTO `btl_feedback`( `userName`, `email`, `phone`, `address`, `message`) 
+    VALUES ('$username','$email','$telephone','$address','$message')";
+    $resul=$conn->query($sql);
+    if($resul){
+        echo '<script>
+        Swal.fire({
+            title: "Good job!",
+            text: "You clicked the button!",
+            icon: "success"
+            });
+        
+        </script>';
+    }
+}
+
+
+?>
